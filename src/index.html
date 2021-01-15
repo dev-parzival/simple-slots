@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simple Slots</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="text/javascript">
+    (() => {
+      let script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "./script.js";
+      script.id = "loader";
+      document.addEventListener("readystatechange", () => {
+        if (document.readyState !== "complete") return;
+        if (document.querySelector("#loader") === undefined) return;
+        document.head.appendChild(script);
+      });
+    })();
+  </script>
+</head>
+
+<!--
+    Author:   Parzival
+    Email:    malte@parzival-dev.eu
+    License:  MIT
+  -->
+
+<body>
+  <div class="slots">
+    <div class="column">
+      <div class="slot" aria-row="1" aria-column="1"></div>
+      <div class="slot" aria-row="2" aria-column="1"></div>
+      <div class="slot" aria-row="3" aria-column="1"></div>
+    </div>
+    <div class="splitter"></div>
+    <div class="column">
+      <div class="slot" aria-row="1" aria-column="2"></div>
+      <div class="slot" aria-row="2" aria-column="2"></div>
+      <div class="slot" aria-row="3" aria-column="2"></div>
+    </div>
+    <div class="splitter"></div>
+    <div class="column">
+      <div class="slot" aria-row="1" aria-column="3"></div>
+      <div class="slot" aria-row="2" aria-column="3"></div>
+      <div class="slot" aria-row="3" aria-column="3"></div>
+    </div>
+  </div>
+  <canvas class="mask" style="display: none;"></canvas>
+  <div class="no-interaction"></div>
+</body>
+
+</html>
