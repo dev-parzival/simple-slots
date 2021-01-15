@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  overflow: hidden;
+  background: black;
+}
+
+.slots {
+  min-width: 650px;
+  min-height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  transform: translate(-50%, -50%);
+  background: black;
+  border: 5px black solid;
+}
+
+.slots .column {
+  display: inline-block;
+  background-color: white;
+  flex-grow: 1;
+  min-width: calc(calc(100% / 3) - calc(3px * 2));
+}
+
+.slots .splitter {
+  display: inline-block;
+  flex-grow: 1;
+  max-width: 3px;
+  background: black;
+}
+
+.slots .slot {
+  height: calc(100% / 3);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mask, .shadow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2), transparent, transparent, rgba(0,0,0,0.2), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+}
+.warning {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 5px;
+  background: red;
+  color: white;
+}
+
+.no-interaction {
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
