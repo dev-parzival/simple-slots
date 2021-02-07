@@ -2,12 +2,12 @@
 
 <h2>About</h2>
 <p>Simple Slots is a very simple solution of a Super 7 slot machine.</p>
-<p>This repository is used in the <a href="https://github.com/tensoid/gambling-bot">Discord Gambling Bot</a> made by <a href="https://github.com/tensoid">tensoid</a> and <a href="https://github.com/dev-parzival">myself</a>.</p>
+<p>This repository is used in the <a href="https://github.com/tensoid/gambling-bot">Discord Gambling Bot</a> made by <a href="https://github.com/tensoid">tensoid</a> and <a href="https://github.com/malte-linke">myself</a>.</p>
 
 <h2>Arguments</h2>
 <p>Simple Slots supports multiple url arguments, you can find a list with its corresponding description below:</p>
 <p>This example forces the seven to have a spawn chance of 1000/1028:</p>
-<code>https://dev-parzival.github.io/simple-slots/demo/index.html?seed=random&autospin=true&seven=1000</code>
+<code>https://malte-linke.github.io/simple-slots/demo/index.html?seed=random&autospin=true&seven=1000</code>
 
 <table>
 <tr>
@@ -92,6 +92,6 @@
 
 <h2>Demo</h2>
 
-<h3 style="margin-left:50%;transform:translateX(-25%);"> >>> <a href="https://dev-parzival.github.io/simple-slots/demo/index.html">OPEN DEMO HERE</a> <<< </h3>
+<h3 style="margin-left:50%;transform:translateX(-25%);"> >>> <a href="https://malte-linke.github.io/simple-slots/demo/index.html">OPEN DEMO HERE</a> <<< </h3>
 
-<img src="https://dev-parzival.github.io/simple-slots/docs/demo.gif">
+<img src="https://malte-linke.github.io/simple-slots/docs/demo.gif">
